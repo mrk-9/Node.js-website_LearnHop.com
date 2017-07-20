@@ -1,0 +1,26 @@
+#features {
+  .feature-single {
+    margin: 50px 0;
+
+    .image {
+      img {
+        display: inline-block;
+        margin-top: 80px;
+      }
+    }
+    .text  {
+      position: relative;
+      top: 100px;
+      h3 {
+        font-weight: 400;
+        margin-bottom: 40px;
+      }
+      p {
+        color: $md-grey-700;
+      }
+      @media(max-width: $screen-sm-min) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

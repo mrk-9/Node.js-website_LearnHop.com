@@ -1,0 +1,40 @@
+= wrap_layout :layout do
+  #blog
+    %section#blog-single
+      .container
+        .row
+          .col-lg-9.col-md-9.main-content
+            %article.blog-post
+              %h2.post-title
+                = link_to current_article.title, current_article
+              .post-image
+                %img.img-thumbnail.img-responsive{alt: "", src: "/assets/images/cleancut/blog2.jpg"}/
+              .post-meta
+                .row
+                  .col-lg-1.col-md-1.hidden-xs.hidden-sm.image
+                    %img.img-circle.img-thumbnail{alt: "", src: "http://placehold.it/48x48"}/
+                  .col-lg-11.col-md-11
+                    .post-meta-text.text-muted
+                      %p.lead
+                        by
+                        %a{href: "#"} Admin
+                        %br/
+                      %p
+                        %i.fa.fa-clock-o
+                        Posted on #{current_article.date.strftime('%b %e')}
+              .post-content
+                = yield
+              - unless current_article.tags.empty?
+                %hr/
+                .post-tags
+                  .row
+                    .col-md-12
+                      Tagged:
+                      - current_article.tags.each do |tag|
+                        = link_to tag_path(tag) do
+                          %span.badge #{tag}
+              -# %hr/
+              -# = partial "partials/blog/author.html.haml"
+
+          = partial "partials/blog-sidebar.html.haml"
+%a.scrollToTop{:href => "#"}  &uarr;Top

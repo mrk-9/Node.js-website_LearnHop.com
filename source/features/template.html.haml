@@ -1,0 +1,31 @@
+.section-header
+  .container
+    .row
+      .col-md-12
+        %h2
+          = f['title']
+          %br
+            %small
+              = f['desc']
+%section#features
+  .container
+    - f.tour.each_with_index do |t, index|
+      .row.feature-single
+        - if index % 2 == 1
+          .col-md-6.col-sm-4.image.hidden-xs{"data-aos" => "fade-up-right"}
+            %img.img-responsive{alt: "#{t['name']}", src: "#{t['img']}"}/
+          .col-md-6.col-sm-8.text{"data-aos" => "fade-up-left"}
+            %h3
+              = t['name']
+            %p.lead
+              = t['desc']
+        - else
+          .col-md-6.col-sm-8.text{"data-aos" => "fade-up-right"}
+            %h3
+              = t['name']
+            %p.lead
+              = t['desc']
+          .col-md-6.col-sm-4.image.hidden-xs{"data-aos" => "fade-up-left"}
+            %img.img-responsive{alt: "#{t['name']}", src: "#{t['img']}"}/
+= partial "../partials/call_for_action_v2.html"
+%a.scrollToTop{:href => "#"}  &uarr;Top

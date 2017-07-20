@@ -1,0 +1,85 @@
+.widget {
+  padding: 10px;
+  @include box-shadow(rgba(0,0,0,0.2) 0 0 3px);
+
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    a {
+      padding: 8px 5px;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      left: 0;
+
+      @include transition(all 0.3s ease-in);
+
+      &:hover {
+        left: 5px;
+      }
+    }
+  }
+
+  .widget-title {
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    color: #000;
+    letter-spacing: 0.5px;
+  }
+
+
+
+  &.widget-cream {
+    background: $secondary;
+  }
+
+  &.widget-red {
+    background: $brand-danger;
+    border: 1px solid darken($brand-danger, 10%);
+    color: $white;
+
+    a:not(.btn) {
+      color: $md-grey-300;
+    }
+
+    .widget-title {
+      color: $white;
+    }
+
+    .list {
+      a {
+        &:hover {
+          background: darken($brand-danger, 2%);
+        }
+      }
+    }
+
+  }
+
+  &.widget-blue  {
+
+
+    background: $brand-info;
+    border: 1px solid darken($brand-info, 10%);
+    color: $white;
+
+    a:not(.btn) {
+      color: $md-grey-100;
+    }
+
+    .widget-title {
+      color: $white;
+    }
+
+    .list {
+      a {
+        &:hover {
+          background: darken($brand-info, 2%);
+        }
+      }
+    }
+
+  }
+}

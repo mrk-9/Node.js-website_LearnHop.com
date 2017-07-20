@@ -1,0 +1,16 @@
+= wrap_layout :layout do
+  #about.page
+    .section-header
+      .container
+        .row
+          .col-md-12
+            %h2
+              = current_page.data.title
+              %br/
+              %small
+                = current_page.data.subtitle
+    .page-content
+      .container
+        .row
+          .col-md-12
+            = yield

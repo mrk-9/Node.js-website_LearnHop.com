@@ -1,0 +1,33 @@
+#support-page {
+  #custom-search-input {
+    margin: 20px auto;
+
+    .input-group-btn {
+      .btn {
+        margin-left: -2px;
+        padding-bottom: 13px;
+      }
+    }
+  }
+
+  .support-icon-main {
+    font-size: 4em;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .categories-area {
+    margin: 80px auto;
+  }
+
+  .articles-area, .contact-form-area {
+    margin-bottom: 80px;
+  }
+
+  @media(max-width:991px) {
+    .widget {
+      margin-bottom: 30px;
+    }
+  }
+}

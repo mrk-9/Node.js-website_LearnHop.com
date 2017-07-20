@@ -1,0 +1,92 @@
+#pricing-page {
+
+  #pricing-table {
+    overflow: hidden;
+  }
+
+  .feature-comparision-table {
+    margin: 50px 0;
+    margin-bottom: 80px;
+    border: 1px solid $md-grey-300;
+    thead {
+      font-size: 1.2em;
+      font-weight: 400;
+      background: $white;
+
+      tr {
+        th {
+          text-transform: uppercase;
+          letter-spacing: 0.3px;
+          font-size: 0.8em;
+          font-weight: bold;
+          padding: 15px;
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    tr {
+      td {
+        vertical-align: middle;
+        text-align: center;
+        &:first-child {
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 0.3px;
+          font-size: 0.9em;
+          text-align: left;
+        }
+        font-size: 1.1em;
+        padding: 15px;
+
+        .feature-not-available {
+          font-weight: bold;
+          font-size: 1.5em;
+          display: block;
+          color: $brand-danger;
+        }
+
+        .feature-available {
+          display: block;
+          color: $brand-success;
+        }
+
+        i.fa.fa-question-circle {
+          color: $md-grey-600;
+          &:hover {
+            color: darken($md-grey-600, 5%);
+          }
+        }
+      }
+    }
+
+    tfoot {
+      background: $white;
+    }
+  }
+
+  .freq-questions {
+    margin-bottom: 30px;
+    .question {
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #eee;
+
+      &:nth-child(3n) {
+        border: none;
+      }
+
+      h5 {
+        color: #111;
+      }
+
+      p {
+        color: $lightGray;
+      }
+    }
+  }
+}

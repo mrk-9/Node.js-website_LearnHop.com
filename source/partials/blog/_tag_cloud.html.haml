@@ -1,0 +1,9 @@
+.sidebar-widget
+  .additional-header
+    %h3 Popular Categories
+  .row
+    .col-lg-12
+      %ul.list-unstyled
+        - blog.tags.each do |tag, articles|
+          %li
+            = link_to tag, tag_path(tag)

@@ -1,0 +1,48 @@
+#feature-boxed {
+  padding: 60px 0;
+  padding-bottom: 80px;
+
+  .heading {
+    margin-bottom: 60px;
+  }
+
+  .main-image {
+    display: inline-block;
+  }
+
+  .feature-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 12px;
+    color: $md-grey-300;
+  }
+
+  .feature-item {
+    margin-bottom: 30px;
+    @media(max-width: $screen-sm-max) {
+      position: relative;
+      .text {
+        padding-left: 80px;
+      }
+
+      .fa {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        width: 80px;
+        text-align: center;
+      }
+    }
+  }
+
+  .btn-main-cta {
+    padding: 22px 48px;
+    margin-top: 48px;
+    font-weight: 500;
+
+    i {
+      position: relative;
+      top: 5px;
+    }
+  }
+}

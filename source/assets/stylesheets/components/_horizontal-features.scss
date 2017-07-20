@@ -1,0 +1,54 @@
+#horizontal-features {
+  background: $secondary;
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0,0,0,0.1);
+
+  @media(max-width: 991px) {
+    padding-bottom: 0;
+  }
+
+  .feature-item {
+    @media(max-width: 991px) {
+      clear: both;
+      overflow: hidden;
+      margin-bottom: 0px;
+    }
+  }
+
+  .image {
+    width: 25%;
+    float: left;
+    img {
+      max-width: 100%;
+      position: relative;
+      top: 5px;
+      display: inline-block;
+      width: 80%;
+    }
+
+    @media(max-width: 991px) {
+      img {
+        top: -40px;
+      }
+    }
+
+  }
+
+  .text {
+    float: left;
+    width: 75%;
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .lead {
+      font-size: 14px;
+      color: $md-grey-600;
+    }
+  }
+}

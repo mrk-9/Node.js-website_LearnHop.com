@@ -1,0 +1,69 @@
+// Font
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,500,600';
+
+// Material Color Palette
+@import "modules/material-colors";
+
+// Customize variables here
+@import "modules/variables";
+@import "modules/bootstrap-overrides";
+
+@import "bootstrap-sass/assets/stylesheets/_bootstrap";  // bower_component
+
+// Modules
+@import "modules/mixins";
+
+
+// Components
+@import "components/scrollTop";
+@import "components/btn";
+@import "components/shared";
+@import "components/alert";
+@import "components/horizontal-features";
+@import "components/feature-list";
+@import "components/pricing-table";
+@import "components/testimonial";
+@import "components/logo-slider";
+@import "components/features-split";
+@import "components/features-boxed";
+@import "components/sticky-note";
+@import "components/widget";
+@import "components/features";
+@import "components/page-sidebar";
+@import "components/header";
+@import "components/footer";
+@import "components/dropdown";
+@import "components/modal-transition";
+@import "components/purchase-modal";
+
+
+
+// Vendor
+@import "vendor/ekko-lightbox"; // copy from bower_component and rename from css to scss
+@import "vendor/aos"; // copy from bower_component
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
+
+// @import "vendor/lightbox/theme";
+// @import "vendor/slick/theme"; // customize
+// @import "vendor/magic-check/all";
+
+
+
+// Pages
+@import "pages/index";
+@import "pages/index-slider";
+@import "pages/index-video";
+@import "pages/about";
+@import "pages/faq";
+@import "pages/blog";
+@import "pages/error";
+@import "pages/pricing";
+@import "pages/services";
+@import "pages/features";
+@import "pages/portfolio";
+@import "pages/gallery";
+@import "pages/login";
+@import "pages/support";
+@import "pages/contact";
+@import "pages/sidebar-page";

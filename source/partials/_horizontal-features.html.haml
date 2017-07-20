@@ -1,0 +1,12 @@
+%section#horizontal-features
+  .container
+    .row
+      - data.bizvalues.each do |bv|
+        .col-md-4.feature-item
+          .image
+            = image_tag bv['image']
+          .text
+            %h4
+              = bv['name']
+            %p.lead
+              = bv['desc']

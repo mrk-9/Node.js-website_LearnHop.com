@@ -1,0 +1,68 @@
+- name: training-centers
+  menu: Training Centers
+  title: Training Center Automation
+  desc: some desc
+  tour:
+    - name: Multiple Calendar Views & Filters
+      desc: Finding open spaces is quick & easy with over six different calendar views including month, week agenda, daily agenda, teachers, and locations. Plus calendar filters for students,teachers and locations.
+      img: calendar1.png
+    - name: Teacher Availability
+      desc: View teacher availability on the calendar for quickly finding openings. Teacher's can manage their availability from their personal LearnHop accounts, so their availability is always up-to-date.
+      img: calendar2.png
+    - name: Quick & Easy Scheduling
+      desc: Manage schedule changes right from the calendar. Drag & Drop lessons to a new time, teacher or location in seconds. Resize lessons to change duration. Click to schedule a new lesson.
+      img: calendar3.png
+    - name: Spot Scheduling Conflicts
+      desc: When scheduling a new lesson, easily view a teacher's lesson and availability conflicts and location conflicts with the click of a button. Conflict details include the specific lessons, availabilities and times of the conflicts.
+      img: calendar4.png
+    - name: Detailed Records
+      desc: Track detailed records for each lesson including attendance status, revenue, wage, teacher, students, location, subject and more. Plus teachers can enter lesson notes to save and email to students or parents.
+      img: calendar5.png
+    - name: Personal Calendars
+      desc: Give teachers, parents, and students easy, online access to their personal calendars. Scheduling changes are available instantly in all accounts, so everyone will always be up-to-date.
+      img: calendar6.png
+    - name: Schedule Confirmations
+      desc: Reduce last minute cancellations and maintain open communication with your customers with schedule confirmation emails. The fully customizable email template gives your clients a quick outlook of upcoming sessions.
+      img: calendar7.png
+- name: tutoring-centers
+  menu: Tutoring Centers
+  title: Tutoring Centers
+  desc: Communication is an important part of any teaching organization. LearnHop will help your business communicate and provide teachers, students and parents with the information that they need.
+  tour:
+    - name: Personal, Online User Accounts
+      desc: Give your Teachers, Staff, Parents and Students personal online accounts with access to their own information based on their account type and permission settings. Customers can conveniently and easily access their calendar, lesson history, invoices and more from any computer with web-access.
+      img: communication1.png
+    - name: Automatic Email Reminders to Improve Attendance
+      desc: Reduce absences and confusion about lesson times and locations with automated lesson reminders for students, parents and teachers. Reminder templates are fully customizable and you can adjust how many hours in advance your reminders are sent.
+      img: communication2.png
+    - name: Provide Feedback with Lesson Notes
+      desc: After each lesson, teachers can save notes about the lesson and have the option to send the notes to parents or students by email. Parents love receiving regular feedback, and this convenient format provides them with a regular reminder of the value of your teaching services.
+      img: communication3.png
+    - name: Automatic SMS Lesson Reminders
+      desc: Enable the SMS Lesson Reminders Add-On and provide students, parents and teachers with timely reminders sent right to their mobile phones. Customize messages and adjust lead times for each type of recipient. Easily view delivery results for all of your reminders.
+      img: communication4.png
+    - name: Send Individual & Group Emails
+      desc: Send emails to one or more of your teachers, staff, students and parents. Save unlimited email templates for frequently used communications. Use merge tags to personalize messages for each recipient.
+      img: communication5.png
+- name: language-schools
+  menu: Language Schools
+  title: Language Schools
+  desc: LearnHop offers several tools to free up hours that you would normally spend on billing clients and collecting payments.
+  tour:
+    - name: Efficient, Rule-Based Billing
+      desc: LearnHop supports a wide range of methods for charging students including per hour by student or by service type, flat-fee, and prepaid hours package. Student discounts and premiums are also supported. Lesson costs are set automatically based on the student's settings -- saving time and reducing clerical errors.
+      img: billing1.png
+    - name: Easy, Editable Invoices
+      desc: Reduce the time you spend generating invoices with LearnHop' flexible invoicing system that generates editable invoices, supports charges & packages and can even pull lessons right from your calendar. Generate invoices for a single client or generate several at once.
+      img: billing2.png
+- name: music-schools
+  menu: Music Schools
+  title: Music Schools
+  desc: LearnHop offers several tools to free up hours that you would normally spend on billing clients and collecting payments.
+  tour:
+    - name: Efficient, Rule-Based Billing
+      desc: LearnHop supports a wide range of methods for charging students including per hour by student or by service type, flat-fee, and prepaid hours package. Student discounts and premiums are also supported. Lesson costs are set automatically based on the student's settings -- saving time and reducing clerical errors.
+      img: billing1.png
+    - name: Easy, Editable Invoices
+      desc: Reduce the time you spend generating invoices with LearnHop' flexible invoicing system that generates editable invoices, supports charges & packages and can even pull lessons right from your calendar. Generate invoices for a single client or generate several at once.
+      img: billing2.png

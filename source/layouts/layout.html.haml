@@ -1,0 +1,29 @@
+!!!
+/[if lt IE 7 ] <html itemscope itemtype="https://schema.org/" id="ie6" class="ie" lang="en-US">
+/[if IE 7 ] <html itemscope itemtype="https://schema.org/" id="ie7" class="ie" lang="en-US">
+/[if IE 8 ] <html itemscope itemtype="https://schema.org/" id="ie8" class="ie" lang="en-US">
+/[if IE 9 ] <html itemscope itemtype="https://schema.org/" id="ie9" class="ie" lang="en-US">
+/ [if gt IE 9]><!
+%html{:itemscope => "", :itemtype => "https://schema.org/", :lang => "en-US"}
+  / <![endif]
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "MindHub InnoTech Ltd", name: "generator"}/
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name: "viewport"}/
+    = partial "layouts/favicon"
+    = partial "layouts/seo.haml"
+    %title= format_title
+    %meta{content: page_description, name: "description"}/
+    %script{src: "https://use.fontawesome.com/da4ac801d8.js"}
+    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: "stylesheet"}/
+    = stylesheet_link_tag :styles
+    = partial "layouts/analytics.haml"
+  %body
+    = partial "layouts/header.haml"
+    #barba-wrapper
+      .barba-container
+        = yield
+    = partial "layouts/footer.haml"
+    = javascript_include_tag :all

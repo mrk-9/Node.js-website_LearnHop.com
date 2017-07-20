@@ -1,0 +1,78 @@
+%nav.navbar.navbar-inverse.navbar-custom-dark{role: "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: "/"}
+        = image_tag "/assets/images/myapp/learnhop1.png", alt: data.settings.brand
+    #bs-navbar-collapse-1.collapse.navbar-collapse.navbar-top-collapse
+      %ul.nav.navbar-nav.navbar-left
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            %i.fa.fa-rocket
+            Features
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/features/overview"}
+                %i.material-icons grade
+                Overview
+            - data.features.each do |feature|
+              %li
+                %a{href: "/features/#{feature[:name]}"}
+                  %i.material-icons switch_camera
+                  #{feature[:menu]}
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            %i.fa.fa-lightbulb-o
+            Solutions
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              - data.solutions.each do |solution|
+                %li
+                  %a{href: "/solutions/#{solution[:name]}"}
+                    %i.material-icons switch_camera
+                    #{solution[:menu]}
+        %li
+          %a{href: "/testimonials"}
+            %i.fa.fa-comments
+            Testimonials
+        %li
+          %a{href: "/pricing"}
+            %i.fa.fa-money
+            Pricing
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+            %i.fa.fa-phone-square
+            Support
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/support/faq"}
+                %i.material-icons record_voice_over
+                FAQ
+            %li
+              %a{href: "/support/knowledge-base"}
+                %i.material-icons question_answer
+                Knowledge Base
+            %li
+              %a{href: "/contact"}
+                %i.material-icons aspect_ratio
+                Contact
+        %li
+          %a{href: "/blog"}
+            %i.fa.fa-rss
+            Blog
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          = link_to '#', class: 'no-barba' do
+            %i.fa.fa-user-circle-o
+            Login
+        %li.navbar-btn-container
+          = link_to 'http://learnhop.com/tenants/register', class: 'btn btn-primary navbar-btn no-barba', type: 'button' do
+            %i.material-icons supervisor_account
+            Try it for FREE

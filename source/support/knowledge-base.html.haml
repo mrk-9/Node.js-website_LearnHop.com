@@ -1,0 +1,131 @@
+#support-page.page
+  .section-header
+    .container
+      .row
+        .col-md-12
+          %h2
+            How can we help?
+            %br/
+            %small
+              Browse our knowledge base to find solutions to common problems
+          #custom-search-input
+            .input-group.col-md-10.col-md-offset-1
+              %input.input-lg.form-control{:placeholder => "Have a question? Ask here...", :type => "text"}/
+              %span.input-group-btn
+                %span.btn.btn-default.btn-lg
+                  %span.fa.fa-search
+                  Search
+        / search input
+  %section.categories-area
+    .container
+      .row
+        .col-md-12
+          .additional-header
+            %h3 Browse By Categories
+      .row
+        .col-lg-4.col-md-4
+          .widget.widget-cream
+            %i.support-icon-main.fa.fa-users
+            %h3.widget-title
+              Privacy Settings
+            %ul.list
+              %li
+                %a{:href => "#"} How to change you privacy settings?
+              %li
+                %a{:href => "#"} How to reset your password?
+              %li
+                %a{:href => "#"} How to change your username?
+            %a.btn.btn-sm.btn-bordered.btn-primary{:href => "#"} 12 more articles →
+        .col-lg-4.col-md-4
+          .widget.widget-blue
+            %i.support-icon-main.fa.fa-money
+            %h3.widget-title
+              Billing Settings
+            %ul.list
+              %li
+                %a{:href => "#"} Can I pay with Paypal?
+              %li
+                %a{:href => "#"} Do you accept Mastercard?
+              %li
+                %a{:href => "#"} How to change my billing address?
+            %a.btn.btn-sm.btn-bordered.btn-white{:href => "#"} 4 more articles →
+        .col-lg-4.col-md-4
+          .widget.widget-red
+            %i.support-icon-main.fa.fa-cogs
+            %h3.widget-title
+              Getting Started
+            %ul.list
+              %li
+                %a{:href => "#"} How to create your first widget?
+              %li
+                %a{:href => "#"} How to add users to your account?
+              %li
+                %a{:href => "#"} How to set up Javascript widget?
+            %a.btn.btn-sm.btn-bordered.btn-white{:href => "#"} 5 more articles →
+  %section.articles-area
+    .container
+      .row
+        .col-md-4.col-lg-4
+          .row
+            .col-md-12
+              .additional-header
+                %h3 Latest Articles
+            .col-md-12.col-lg-12
+              .list-group.support-articles-list
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-star
+                  How to change you privacy settings?
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-user
+                  How to change your username?
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-cogs
+                  How to add users to your account?
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-code
+                  How to set up Javascript widget?
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-briefcase
+                  How to change your username?
+        .col-md-4.col-lg-4
+          .row
+            .col-md-12
+              .additional-header
+                %h3 Popular Articles
+            .col-md-12.col-lg-12
+              .list-group.support-articles-list
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-star
+                  How to change you privacy settings?
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-user
+                  How to change your username?
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-cogs
+                  How to add users to your account?
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-code
+                  How to set up Javascript widget?
+                %a.list-group-item{:href => "#"}
+                  %i.fa.fa-briefcase
+                  How to change your username?
+        .col-md-4.col-lg-4
+          .row
+            .col-md-12
+              .additional-header
+                %h3 Get Help
+              .panel.panel-primary
+                .panel-body
+                  %h4 Didn't find the answer that you were looking for?
+                  %p.lead
+                    Drop us an
+                    %a{:href => "#"} email
+                    or fill out our
+                    %a{:href => "contact.html"} contact form
+                    and we'll get back to you shortly.
+  %section.contact-form-area
+    .container
+      .row
+        .col-md-12
+          = partial "../partials/contact-form.html"
+  = partial "../partials/horizontal-features.html"

@@ -1,0 +1,36 @@
+.feature-square-list {
+
+  .feature-square-single {
+    position: relative;
+    padding-left: 110px;
+
+    .main-icon-container {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      i {
+        color: $md-grey-300;
+        font-size: 90px;
+      }
+    }
+
+    &.second {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+
+      @media(max-width: $screen-sm-max) {
+        border: none;
+      }
+    }
+
+    @media(max-width: $screen-sm-max) {
+      padding-bottom: 40px;
+    }
+  }
+
+
+  @media(max-width: $screen-sm-max) {
+    padding: 20px;
+    padding-top: 80px;
+  }
+}

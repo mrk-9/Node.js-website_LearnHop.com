@@ -1,0 +1,75 @@
+- name: calendar
+  menu: Calendar & Scheduling
+  title: Complex Scheduling Simplified
+  desc: Coordinating schedules with multiple teachers, students and locations can be a challenge. LearnHop simplifies scheduling and ensures that everyone is on the same page.
+  tour:
+    - name: Multiple Calendar Views & Filters
+      desc: Finding open spaces is quick & easy with over six different calendar views including month, week agenda, daily agenda, teachers, and locations. Plus calendar filters for students,teachers and locations.
+      img: /assets/images/display/mockup-2.png
+    - name: Teacher Availability
+      desc: View teacher availability on the calendar for quickly finding openings. Teacher's can manage their availability from their personal LearnHop accounts, so their availability is always up-to-date.
+      img: /assets/images/display/mockup-2.png
+    - name: Quick & Easy Scheduling
+      desc: Manage schedule changes right from the calendar. Drag & Drop lessons to a new time, teacher or location in seconds. Resize lessons to change duration. Click to schedule a new lesson.
+      img: /assets/images/display/mockup-2.png
+    - name: Spot Scheduling Conflicts
+      desc: When scheduling a new lesson, easily view a teacher's lesson and availability conflicts and location conflicts with the click of a button. Conflict details include the specific lessons, availabilities and times of the conflicts.
+      img: /assets/images/display/mockup-2.png
+    - name: Detailed Records
+      desc: Track detailed records for each lesson including attendance status, revenue, wage, teacher, students, location, subject and more. Plus teachers can enter lesson notes to save and email to students or parents.
+      img: /assets/images/display/mockup-2.png
+    - name: Personal Calendars
+      desc: Give teachers, parents, and students easy, online access to their personal calendars. Scheduling changes are available instantly in all accounts, so everyone will always be up-to-date.
+      img: /assets/images/display/mockup-2.png
+    - name: Schedule Confirmations
+      desc: Reduce last minute cancellations and maintain open communication with your customers with schedule confirmation emails. The fully customizable email template gives your clients a quick outlook of upcoming sessions.
+      img: /assets/images/display/mockup-2.png
+- name: communication
+  menu: Communication
+  title: Enhance & Automate Communication.
+  desc: Communication is an important part of any teaching organization. LearnHop will help your business communicate and provide teachers, students and parents with the information that they need.
+  tour:
+    - name: Personal, Online User Accounts
+      desc: Give your Teachers, Staff, Parents and Students personal online accounts with access to their own information based on their account type and permission settings. Customers can conveniently and easily access their calendar, lesson history, invoices and more from any computer with web-access.
+      img: /assets/images/display/mockup-2.png
+    - name: Automatic Email Reminders to Improve Attendance
+      desc: Reduce absences and confusion about lesson times and locations with automated lesson reminders for students, parents and teachers. Reminder templates are fully customizable and you can adjust how many hours in advance your reminders are sent.
+      img: /assets/images/display/mockup-2.png
+    - name: Provide Feedback with Lesson Notes
+      desc: After each lesson, teachers can save notes about the lesson and have the option to send the notes to parents or students by email. Parents love receiving regular feedback, and this convenient format provides them with a regular reminder of the value of your teaching services.
+      img: /assets/images/display/mockup-2.png
+    - name: Automatic SMS Lesson Reminders
+      desc: Enable the SMS Lesson Reminders Add-On and provide students, parents and teachers with timely reminders sent right to their mobile phones. Customize messages and adjust lead times for each type of recipient. Easily view delivery results for all of your reminders.
+      img: /assets/images/display/mockup-2.png
+    - name: Send Individual & Group Emails
+      desc: Send emails to one or more of your teachers, staff, students and parents. Save unlimited email templates for frequently used communications. Use merge tags to personalize messages for each recipient.
+      img: /assets/images/display/mockup-2.png
+- name: billing
+  menu: Billing & Payroll
+  title: Less Accounting. More Teaching.
+  desc: LearnHop offers several tools to free up hours that you would normally spend on billing clients and collecting payments.
+  tour:
+    - name: Efficient, Rule-Based Billing
+      desc: LearnHop supports a wide range of methods for charging students including per hour by student or by service type, flat-fee, and prepaid hours package. Student discounts and premiums are also supported. Lesson costs are set automatically based on the student's settings -- saving time and reducing clerical errors.
+      img: /assets/images/display/mockup-2.png
+    - name: Easy, Editable Invoices
+      desc: Reduce the time you spend generating invoices with LearnHop' flexible invoicing system that generates editable invoices, supports charges & packages and can even pull lessons right from your calendar. Generate invoices for a single client or generate several at once.
+      img: /assets/images/display/mockup-2.png
+    - name: Professional, Custom Invoices
+      desc: Extend your company's brand with LearnHop' professional, customizable invoices. Add your company logo, contact details, instructions and more. Invoices can be emailed, printed and saved in PDF format.
+      img: /assets/images/display/mockup-2.png
+    - name: Highlighted Invoice Changes
+      desc: Flagged invoices let administrators or staff easily spot when changes to lessons on the calendar affect invoice totals. When viewing a flagged invoice, the changes to the affected lessons and the invoice total are clearly highlighted and the recommended action is indicated.
+      img: /assets/images/display/mockup-2.png
+    - name: Accept Credit Card Payments
+      desc: Offer your clients more convenience by accepting online credit card payments. LearnHop is integrated with Stripe so you can begin accepting credit cards in minutes without a merchant account. Clients can pay quickly directly from their online invoices.
+      img: /assets/images/display/mockup-2.png
+    - name: Automated Timesheets & Teacher Payments
+      desc: There's no need to collect time sheets from your teachers because teacher hours are pulled right from the lessons on the calendar. Calculating teacher payments is as easy as selecting the payment time period, checking the lessons to include, and submitting the payment form.
+      img: /assets/images/display/mockup-2.png
+    - name: Invoice Autopilot
+      desc: LearnHop' Invoice Autopilot add-on allows you to automatically generate invoices according to a customizable schedule. Flexible schedule options & customizable invoice settings help you reduce the amount of time you spend on invoicing.
+      img: /assets/images/display/mockup-2.png
+    - name: Custom Invoice Email Templates
+      desc: Personalize invoice notifications by customizing email templates for different scenarios such as sending a customer their first invoice, invoice reminders, final notices and more!
+      img: /assets/images/display/mockup-2.png

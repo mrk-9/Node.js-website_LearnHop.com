@@ -1,0 +1,258 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1040px;
+  }
+}
+
+body {
+  font-family: $sourceSans;
+}
+
+h1, h2, h3, h4, h5, h6, .nav a {
+  font-family: $oxygen;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: $primary;
+
+  &:not(.navbar-brand) {
+    @include transition(all 0.3s ease-in);
+  }
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+// Pagination
+.pagination>.active {
+  >a,
+  >span,
+  >a:hover,
+  >span:hover,
+  >a:focus,
+  >span:focus {
+    background-color: $primary;
+    border-color: darken($primary, 10%);
+  }
+}
+.pagination>li>a,
+.pagination>li>span {
+  @include transition(all 0.25s linear);
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.modal {
+  .modal-content {
+    @include border-radius(0px);
+    @include box-shadow(rgba(0,0,0,0.2) 0 0 10px);
+  }
+}
+
+.modal-backdrop {
+  background-color: url("../images/pattern-overlay.png");
+  @include transition(all 0.3s ease-in);
+  &.in {
+    opacity: 0.6;
+  }
+}
+
+
+// Modal Transition
+@-webkit-keyframes fadeAndScaleIn {
+  from {
+    opacity: 0;
+    @include transform(scale(0.7));
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAndScaleIn {
+  from {
+    opacity: 0;
+    @include transform(scale(0.7));
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeAndScaleOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    @include transform(scale(0.7));
+  }
+}
+
+@keyframes fadeAndScaleOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    @include transform(scale(0.7));
+  }
+}
+
+
+.fade-and-zoom {
+  -webkit-animation-duration: .3s;
+  -moz-animation-duration: .3s;
+  -ms-animation-duration: .3s;
+  animation-duration: .3s;
+
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  -ms-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.fade-and-zoom {
+  -webkit-animation-name: fadeAndScaleIn;
+  -moz-animation-name: fadeAndScaleIn;
+  -ms-animation-name: fadeAndScaleIn;
+  animation-name: fadeAndScaleIn;
+}
+
+
+
+// Buttons
+.input-group-btn {
+  .btn {
+    padding-bottom: 11px;
+  }
+}
+.btn.btn-default {
+  outline: none;
+
+  background: rgb(234, 234, 234);
+  background: -moz-linear-gradient(0deg, #D8D7D7 10%, #FFFFFF 70%);
+  background: -webkit-linear-gradient(0deg, #D8D7D7 10%, #FFFFFF 70%);
+  background: -o-linear-gradient(0deg, #D8D7D7 10%, #FFFFFF 70%);
+  background: -ms-linear-gradient(0deg, #D8D7D7 10%, #FFFFFF 70%);
+  background: linear-gradient(0deg, #D8D7D7 10%, #FFFFFF 70%);
+  border: 1px solid darken(#D8D7D7, 10%);
+  @include box-shadow(rgba(0,0,0,0.2) 0 1px 1px, inset 0 1px 0 #fff);
+  @include transition(none);
+  text-shadow: 0 1px 0px #fff;
+
+  &:active, &.active {
+    background: #D8D7D7;
+    @include box-shadow(inset 0 1px 2px rgba(#000, 0.2));
+  }
+}
+
+.btn.btn-dark {
+  color: #eee;
+  background: rgb(76, 76, 76);
+  background: -moz-linear-gradient(0deg, #213A46 10%, #314E5C 100%);
+  background: -webkit-linear-gradient(0deg, #213A46 10%, #314E5C 100%);
+  background: -o-linear-gradient(0deg, #213A46 10%, #314E5C 100%);
+  background: -ms-linear-gradient(0deg, #213A46 10%, #314E5C 100%);
+  background: linear-gradient(0deg, #213A46 10%, #314E5C 100%);
+
+  border: 1px solid darken(#213A46, 5%);
+
+
+  @include box-shadow(rgba(0,0,0,0.2) 0 1px 0px, inset 0 1px 0 rgba(#fff, 0.1));
+  @include transition(none);
+  text-shadow: 0 1px 0px rgba(#000, 0.4);
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:active, &.active {
+    color: #fff;
+    background: darken(#192D36, 10%);
+    @include box-shadow(inset 0 1px 2px rgba(#000, 0.2));
+  }
+
+}
+
+
+.btn.btn-danger {
+  background: #912323;
+  background: -moz-linear-gradient(0deg, #912323 0%, #DA1515 100%);
+  background: -webkit-linear-gradient(0deg, #912323 0%, #DA1515 100%);
+  background: -o-linear-gradient(0deg, #912323 0%, #DA1515 100%);
+  background: -ms-linear-gradient(0deg, #912323 0%, #DA1515 100%);
+  background: linear-gradient(0deg, #912323 0%, #DA1515 100%);
+
+  border: 1px solid darken(#912323, 5%);
+
+
+  @include box-shadow(rgba(0,0,0,0.2) 0 1px 0px, inset 0 1px 0 rgba(#fff, 0.2));
+  @include transition(none);
+  text-shadow: 0 1px 0px rgba(#000, 0.4);
+
+  &:active, &.active {
+    background: darken(#912323, 10%);
+    @include box-shadow(inset 0 1px 2px rgba(#000, 0.2));
+  }
+
+}
+
+.btn.btn-primary {
+
+  background: #3B7FB9;
+  background: -moz-linear-gradient(0deg, #3B7FB9 0%, #4B9DE4 100%);
+  background: -webkit-linear-gradient(0deg, #3B7FB9 0%, #4B9DE4 100%);
+  background: -o-linear-gradient(0deg, #3B7FB9 0%, #4B9DE4 100%);
+  background: -ms-linear-gradient(0deg, #3B7FB9 0%, #4B9DE4 100%);
+  background: linear-gradient(0deg, #3B7FB9 0%, #4B9DE4 100%);
+
+  border: 1px solid darken(#3B7FB9, 5%);
+
+
+  @include box-shadow(rgba(0,0,0,0.2) 0 1px 0px, inset 0 1px 0 rgba(#fff, 0.2));
+  @include transition(none);
+  text-shadow: 0 1px 0px rgba(#000, 0.4);
+
+  &:active, &.active {
+    background: darken(#3B7FB9, 10%);
+    @include box-shadow(inset 0 1px 2px rgba(#000, 0.2));
+  }
+}
+
+
+// Validation states
+.has-error {
+  label {
+    color: #a94442;
+  }
+}
+
+.has-success {
+  label {
+    color: #3c763d;
+  }
+}

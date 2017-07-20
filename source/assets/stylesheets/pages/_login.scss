@@ -1,0 +1,64 @@
+#login-page {
+  margin-bottom: 100px;
+
+  .login-box {
+    width: 50%;
+    margin: 40px auto;
+    min-height: 40vh;
+
+    @media(max-width:767px) {
+      width: 90%;
+    }
+  }
+
+  .signup {
+    margin-bottom: 100px;
+    .checkbox {
+      margin-top: 20px;
+    }
+  }
+
+  .social-elements {
+    margin-top: 20px;
+    border-right: 1px solid $md-grey-300;
+    @media(max-width:991px) {
+      border: none;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .social-login-btn {
+    width: 60px;
+    height: 55px;
+    font-size: 30px;
+
+    &.social-facebook {
+      background: #4c699e;
+      border-color: #47618d;
+    }
+
+    &.social-twitter {
+      background: #1daee3;
+      border-color: #3997ba;
+    }
+
+    &.social-linkedin {
+      background: #4875B4;
+      border-color: #466b99;
+    }
+
+    &.social-linkedin {
+      background: #da573b;
+      border-color: #be5238;
+    }
+  }
+
+  .social-login-btn-dropdown {
+    width: 120px;
+    font-size: 14px;
+
+  }
+
+}

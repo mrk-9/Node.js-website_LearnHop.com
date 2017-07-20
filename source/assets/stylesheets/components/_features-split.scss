@@ -1,0 +1,61 @@
+#features-split {
+  @media(min-width: $screen-sm-max) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .feature-split-image {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .features-item {
+    overflow: hidden;
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 0;
+    .image {
+      width: 20%;
+      float: left;
+      margin-bottom: 12px;
+      img {
+        width: 100%;
+        position: relative;
+        top: 5px;
+      }
+      @media(max-width: $screen-sm-min) {
+        width: 15%;
+        margin-bottom: 24px;
+      }
+    }
+
+    .text {
+      width: 75%;
+      float: left;
+      margin-left: 5%;
+      margin-top: 6px;
+      @media(max-width: $screen-sm-max) {
+        margin-left: 0;
+        font-size: 1em;
+      }
+
+      @media(max-width: $screen-sm-min) {
+        width: 80%;
+        margin-left: 5%;
+        font-size: 1.5em;
+        margin-top: 6px;
+      }
+
+      @media(max-width: $screen-xs) {
+        width: 80%;
+        margin-left: 5%;
+        font-size: 1em;
+        margin-top: 12px;
+      }
+    }
+
+
+
+  }
+}

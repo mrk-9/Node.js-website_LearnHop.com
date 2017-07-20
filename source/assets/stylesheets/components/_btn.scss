@@ -1,0 +1,44 @@
+.btn {
+  outline: none;
+  &:focus, &:active {
+    outline: none !important;
+  }
+
+  // Round
+  &.btn-round {
+    border-radius: 512px;
+  }
+
+  // Bordered
+  &.btn-bordered {
+    background: transparent;
+    color: $text-color;
+
+    &.btn-white {
+      color: $white;
+      border-color: $white;
+    }
+
+    &.btn-primary {
+      color: $brand-primary;
+    }
+
+    &.btn-warning {
+      color: $brand-warning;
+    }
+
+    &.btn-success {
+      color: $brand-success;
+    }
+
+    &.btn-danger {
+      color: $brand-danger;
+    }
+
+    &.btn-info {
+      color: $brand-info;
+    }
+  }
+
+
+}

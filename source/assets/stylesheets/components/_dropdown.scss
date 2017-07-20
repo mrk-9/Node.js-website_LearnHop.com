@@ -1,0 +1,17 @@
+@media(min-width: $screen-sm-max) {
+  .dropdown .dropdown-menu {
+    transition: all 200ms ease-in;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.9);
+    transform-origin: top left;
+    visibility: hidden;
+  }
+
+  .dropdown.open .dropdown-menu {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+  }
+}

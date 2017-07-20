@@ -1,0 +1,15 @@
+- name: John Doe
+  company: ABC Inc
+  image: /assets/images/cleancut/avatar1.jpg
+  animation: fade-up-right
+  comment: Great stuff! My course bookings has never been easier and number of bookings doubled!
+- name: John Doe
+  company: ABC Inc
+  image: /assets/images/cleancut/avatar2.jpg
+  animation: fade-up-left
+  comment: Great stuff! My course bookings has never been easier and number of bookings doubled!
+- name: John Doe
+  company: ABC Inc
+  image: /assets/images/cleancut/avatar3.jpg
+  animation: fade-up
+  comment: Great stuff! My course bookings has never been easier and number of bookings doubled!

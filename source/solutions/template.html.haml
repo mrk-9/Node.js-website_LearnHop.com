@@ -1,0 +1,165 @@
+#services.page
+  .section-header
+    .container
+      .row
+        .col-md-12
+          %h2
+            = s['title']
+            %br/
+            %small
+              = s['desc']
+  %section.tour
+    .container
+      .row
+        .col-md-12
+          .text-center
+            %img.img-responive{:alt => "", :src => "/assets/images/display/tour-1.png"}/
+  %section.main-content
+    .container
+      #service-tabs.row
+        .col-md-12
+          .tab-centered
+            %ul.nav.nav-tabs
+              %li.active
+                %a{"data-toggle" => "tab", :href => "#tab1"}
+                  %i.fa.fa-picture-o
+                  Beautiful
+              %li
+                %a{"data-toggle" => "tab", :href => "#tab2"}
+                  %i.fa.fa-mobile
+                  Mobile First
+              %li
+                %a{"data-toggle" => "tab", :href => "#tab3"}
+                  %i.fa.fa-file-text
+                  20+ Pages
+              %li
+                %a{"data-toggle" => "tab", :href => "#tab4"}
+                  %i.fa.fa-cogs
+                  StartKit
+            / Tab panes
+            .tab-content
+              #tab1.tab-pane.in.fade.active
+                .row
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/camera.jpg"}/
+                    .text
+                      %h4
+                        Splendid than the moon
+                      %p
+                        If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.
+                      %p
+                        The path of a cosmonaut is not an easy, triumphant march to glory. You have to get to know the meaning not just of joy but also of grief, before being allowed in the spacecraft cabin.
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/watching.jpg"}/
+                    .text
+                      %h4
+                        Bootstrap 3 Ready
+                      %p
+                        As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/flower.jpg"}/
+                    .text
+                      %h4
+                        Dummy Service #3
+                      %p
+                        It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn't feel like a giant. I felt very, very small.
+                      %p
+                        We want to explore. We’re curious people. Look back over history.
+              / tab1
+              #tab2.tab-pane.fade
+                .row
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/party.jpg"}/
+                    .text
+                      %h4
+                        Bootstrap 3 Ready
+                      %p
+                        If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.
+                      %p
+                        The path of a cosmonaut is not an easy, triumphant march to glory. You have to get to know the meaning not just of joy but also of grief, before being allowed in the spacecraft cabin.
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/person1.jpg"}/
+                    .text
+                      %h4
+                        Bootstrap 3 Ready
+                      %p
+                        If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.
+                      %p
+                        The path of a cosmonaut is not an easy, triumphant march to glory. You have to get to know the meaning not just of joy but also of grief, before being allowed in the spacecraft cabin.
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/person2.jpg"}/
+                    .text
+                      %h4
+                        Bootstrap 3 Ready
+                      %p
+                        If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.
+                      %p
+                        The path of a cosmonaut is not an easy, triumphant march to glory. You have to get to know the meaning not just of joy but also of grief, before being allowed in the spacecraft cabin.
+              / tab2
+              #tab3.tab-pane.fade
+                .row
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/flower.jpg"}/
+                    .text
+                      %h4
+                        Fillerati Text
+                      %p
+                        In connection with this appellative of 'Whalebone whales,' it is of great importance to mention, that however such a nomenclature may be convenient in facilitating allusions to some kind of whales, yet it is in vain to attempt a clear classification of the Leviathan, founded upon either his baleen, or hump, or fin, or teeth.
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/watching.jpg"}/
+                    .text
+                      %h4
+                        Responsive Web Design
+                      %p
+                        Bacon ipsum dolor sit amet salami jowl corned beef, andouille flank tongue ball tip kielbasa pastrami tri-tip meatloaf short loin beef biltong. Cow bresaola ground round strip steak fatback meatball shoulder leberkas pastrami sausage corned beef t-bone pork belly drumstick.
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/camera.jpg"}/
+                    .text
+                      %h4
+                        Cheese Ipsum
+                      %p
+                        I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire.
+              / tab3
+              #tab4.tab-pane
+                .row
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/person3.jpg"}/
+                    .text
+                      %h4
+                        20+ Page Options
+                      %p
+                        If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon.
+                      %p
+                        The path of a cosmonaut is not an easy, triumphant march to glory. You have to get to know the meaning not just of joy but also of grief, before being allowed in the spacecraft cabin.
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/person1.jpg"}/
+                    .text
+                      %h4
+                        StartKit Template
+                      %p
+                        We'll need to have a look inside you with this camera. Leela's gonna kill me. Eeeee! Now say 'nuclear wessels'! And when we woke up, we had these bodies. I've been there. My folks were always on me to groom myself and wear underpants. What am I, the pope?
+                      %p
+                        Secondary fermentation degrees plato units of bitterness, cask conditioned ale ibu real ale pint glass craft bee
+                  .col-md-4.service-item
+                    .image
+                      %img.img-responsive{:alt => "", :src => "/assets/images/cleancut/person2.jpg"}/
+                    .text
+                      %h4
+                        Bootstrap 3 Ready
+                      %p
+                        I just closed my eyes and in a nanosecond I cured myself from this ridiculous model of disease, addiction and obsession. It's just the work of sissies. How complicated can it be? What they're not ready for, is guys like you and I, Nails, and all the other gnarly gnarlingtons in my life, that we are high priests. Vatican assassin warlocks. Boom. Print that, people.
+  = partial "../partials/call_for_action.html"
+  = partial "../partials/horizontal-features.html"
+  = partial "../partials/full-width-service.html"
+  %a.scrollToTop{:href => "#"}  &uarr;Top

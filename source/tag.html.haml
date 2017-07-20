@@ -1,0 +1,56 @@
+---
+pageable: true
+per_page: 10
+---
+
+#blog
+  %section#blog-index
+    .container
+      .row
+        .col-md-12
+          %h1 Articles tagged #{tagname}
+      .row
+        .col-md-9.main-content
+          - page_articles.each_with_index do |article, i|
+            %article.blog-post
+              %h2.post-title
+                = link_to article.title, article
+              .post-image
+                = link_to article do
+                  %img.img-thumbnail.img-responsive{alt: "", src: "/assets/images/cleancut/blog1.jpg"}/
+              .post-meta
+                .row
+                  .col-lg-1.col-md-1.hidden-xs.hidden-sm.image
+                    %img.img-circle.img-thumbnail{alt: "", src: "http://placehold.it/48x48"}/
+                  .col-lg-11.col-md-11
+                    .post-meta-text.text-muted
+                      %p.lead
+                        by
+                        %a{href: "#"} Admin
+                        %br/
+                      %p
+                        %i.fa.fa-clock-o
+                        Posted on #{article.date.strftime('%b %e')}
+              .post-content
+                %p.lead
+                  = article.summary(128)
+                %br/
+                .text-right
+                  = link_to 'Continue Reading →', article, class: 'btn btn-bordered btn-primary btn-round'
+
+          - if paginate && num_pages > 1
+            .row.text-center.pagination-container
+              .col-md-12
+                %nav
+                  %ul.pager
+                    - if prev_page
+                      %li.previous
+                        = link_to prev_page do
+                          %span{"aria-hidden" => "true"} ←
+                          Older Posts
+                    - if next_page
+                      %li.next
+                        = link_to next_page do
+                          Newer Posts
+                          %span{"aria-hidden" => "true"} →
+        = partial "partials/blog-sidebar.html"

@@ -1,0 +1,104 @@
+
+.price {
+  font-size: 1.5em;
+  padding-bottom: 15px;
+}
+
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.price-month {
+  font-size: 35%;
+  font-style: italic;
+}
+
+#pricing-table {
+  .p-tables {
+    margin: 50px auto;
+  }
+  .panel.panel-default {
+    border-color: #ccc;
+    position: relative;
+    top: 20px;
+
+    @include transition-property(top, shadow);
+    @include transition-duration(0.2s);
+
+    .panel-heading {
+      min-height: 100px;
+      font-size: 24px;
+      background-color: #fff;
+    }
+
+    .plan-title {
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+    }
+
+
+    .list-group-item {
+      border: none;
+      padding: 15px 0;
+
+      &.button-wrapper {
+        padding: 25px 0;
+      }
+    }
+
+    &:hover {
+      @include box-shadow(0 0 4px rgba(0,0,0,0.1));
+    }
+
+    @media(max-width: 991px) {
+      max-width: 80%;
+      margin-left: 10%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .popular-plan {
+    .popular-label {
+      position: absolute;
+      background: $brand-primary;
+      top: 10px;
+      right: -25px;
+      z-index: 1;
+      color: $white;
+      font-weight: 500;
+      font-size: 12px;
+      padding: 2px 25px;
+      transform: rotate(40deg);
+    }
+
+    .panel.panel-default {
+      border-color: $brand-primary;
+      top: 0px;
+      position: relative;
+      overflow: hidden;
+      transform: scale(1.05);
+
+      .plan-title {
+        color: $brand-primary;
+      }
+
+      .panel-heading {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      @media(max-width: 991px) {
+        top: 20px;
+      }
+    }
+  }
+
+  .call-us {
+    .text {
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+  }
+}

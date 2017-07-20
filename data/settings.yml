@@ -1,0 +1,21 @@
+site_url: 'http://learnhop.com'
+brand: 'LearnHop'
+tagline: 'Empower Your Training Business'
+phone_number: +1 408-335-9146 (USA) +852 2992 0089 (Hong Kong)
+email: hello@LearnHop.com
+site_title: 'Training Business Management Solution | LearnHop'
+site_description: 'Cloud-based Training Center Management Solution. Grow your business! Focus on your expertise!'
+site_author: 'Mindhub InnoTech Limited'
+site_author_profile: 'More about Mindhub'
+site_author_image: 'profile.png'
+reverse_title: true
+social_links:
+  - name: 'Twitter'
+    url: 'https://twitter.com'
+  - name: 'Youtube'
+    url: 'https://youtube.com'
+  - name: 'LinkedIn'
+    url: 'https://linkedin.com'
+  - name: 'Facebook'
+    url: 'https://facebook.com'
+google_analytics_account: 'UA-74127394-4'

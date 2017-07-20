@@ -1,0 +1,31 @@
+.additional-header
+  %h3
+    Fill out this form
+%p.lead
+  Our support staff will get in touch with you as soon as possible.
+  %br
+    Holidays  weekends may take extra time.
+  %form#contact-us-form
+    .row
+      .col-md-5
+        .form-group
+          %label{:for => "fname"} Name
+          %input#fname.form-control{:name => "fname", :type => "text"}
+        .form-group
+          %label{:for => "email"}
+            Email
+            %sup *
+          %input#email.form-control{:name => "email", :type => "email"}
+        .form-group
+          %label{:for => "subject"}
+            Subject
+            %sup *
+          %input#subject.form-control{:name => "subject", :type => "text"}
+      .col-md-7
+        .form-group
+          %label{:for => "message"}
+            Message
+            %sup *
+          %textarea#message.form-control{:cols => "30", :name => "message", :rows => "10"}
+    .actions
+      %input.btn.btn-primary.btn-lg{:type => "submit", :value => "Send Message"}

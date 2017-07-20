@@ -1,0 +1,75 @@
+#faq
+  .section-header
+    .container
+      .row
+        .col-md-12
+          %h2
+            Ferquently Asked Questions
+            %br/
+            %small
+              Don't hesitate to call us if you need any additional help
+  %section#accordion
+    .container
+      .row
+        .col-md-9.main-content
+          .panel-group
+            - data.faq.each_with_index do |qa, i|
+              .panel.panel-default
+                .panel-heading
+                  %h4.panel-title
+                    %a.accordion-toggle{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapse#{i}"}
+                      = qa['question']
+                .panel-collapse.collapse.in{ id: "#collapse#{1}" }
+                  .panel-body
+                    = qa['answer']
+        %aside#page-sidebar.col-lg-3.col-md-3
+          .sidebar-widget
+            .additional-header
+              %h3
+                Search
+            %p.help-block.text-muted
+              Type your search term and hit enter
+            %form{:role => "search"}
+              %input.form-control.search-field{:placeholder => "Search..", :type => "search"}/
+          .sidebar-widget
+            .notepaper
+              .note
+                .text
+                  %h3.text-center Level Up Your Business Now!
+                  %p
+                    LearnHop is your number one choice for running training business.
+                  %p
+                    %i.fa.fa-check
+                    Course Management
+                    %br/
+                    %i.fa.fa-check
+                    Highly Customizable
+                    %br/
+                    %i.fa.fa-check
+                    Robust, stable with daily backup
+                    %br/
+                    %i.fa.fa-check
+                    Integration
+                    %br/
+                  .text-center
+                    %a.btn.btn-danger{:href => "#"} Try for Free
+          -# .sidebar-widget
+          -#   .additional-header
+          -#     %h3
+          -#       Menu
+          -#   %ul.nav
+          -#     %li
+          -#       %a{:href => "index.html"} Home
+          -#     %li
+          -#       %a{:href => "about.html"} About
+          -#     %li
+          -#       %a{:href => "portfolio-1-col.html"} Portfolio
+          -#     %li
+          -#       %a{:href => "gallery.html"} Gallery
+          -#     %li
+          -#       %a{:href => "services.html"} Services
+          -#     %li
+          -#       %a{:href => "features.html"} Features
+          -#     %li
+          -#       %a{:href => "pricing.html"} Pricing
+  %div

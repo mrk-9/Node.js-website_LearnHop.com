@@ -1,0 +1,83 @@
+%footer#main-footer
+  .container.menu-container
+    .row
+      .col-sm-8.col-xs-12
+        .row
+          .col-sm-4.col-xs-6.footer-menu
+            %h3
+              %span Solutions
+            %ul.unstyled
+              - data.solutions.each do |solution|
+                %li
+                  %a{href: "/solutions/#{solution[:name]}"}
+                    %i.material-icons done_all
+                    #{solution[:menu]}
+          .col-sm-4.col-xs-6.footer-menu
+            %h3
+              %span Features
+            %ul.unstyled
+              - data.features.each do |feature|
+                %li
+                  %a{href: "/features/#{feature[:name]}"}
+                    %i.material-icons compare
+                    #{feature[:menu]}
+                    -# %small.label.label-success New!
+              %li
+                %a{href: "faq.html"}
+                  %i.material-icons question_answer
+                  More
+          .col-sm-4.hidden-xs.footer-menu
+            %h3
+              %span Social
+            %ul.unstyled
+              %li
+                = link_to '/blog' do
+                  %i.material-icons insert_emoticon
+                  Blog
+              - data.settings.social_links.each do |link|
+                %li
+                  = link_to link.url, title: link.name do
+                    %i.fa{ class: "fa-#{link.name.downcase}" }
+                    = link.name
+      .col-sm-4.hidden-xs.blog-item
+        %h3
+          %span Blog
+        = link_to page_articles.sort_by { |a| a.date }.last.url do
+          .image-wrapper
+            = image_tag "/assets/images/cleancut/website.png"
+            .text
+              %h4
+                = page_articles.sort_by { |a| a.date }.last.title
+  .copyright-footer
+    .container
+      .row
+        .col-md-12
+          #{data.settings.brand}. Copyright © 2016-#{Time.now.year}. All Rights Reserved
+          = link_to 'Terms of Use', '/legal/terms'
+          &nbsp;|&nbsp;
+          = link_to 'Privacy Policy', '/legal/privacy'
+          .pull-right.hidden-xs
+            = link_to data.settings.brand, data.settings.site_url
+#purchaseModal.modal.fade.zoom-out
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} &ttimes;
+        %h4.modal-title Modal example
+      .modal-body
+        %p.lead
+          This is a modal with costom transitions. You can choose from 'zoom-out' 'move-horizontal' & 'newspaper-effect'.
+        %p
+          Below are some are some other home page variants that you can use -
+        %ul
+          %li
+            %a{href: "index.html"}
+              Default home page with 2
+          %li
+            %a{href: "index-2.html"}
+              Home page for software products
+          %li
+            %a{href: "index-3.html"}
+              Home page for Mobile apps
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close

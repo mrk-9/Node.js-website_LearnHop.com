@@ -1,0 +1,157 @@
+#services {
+
+  .main-content {
+    margin-top: 50px;
+  }
+
+
+  .tab-centered {
+    text-align: center;
+
+    .nav-tabs {
+      display: inline-block;
+      padding: 0 20px;
+      li {
+        a {
+          font-size: 18px;
+          padding-left: 30px;
+          padding-right: 30px;
+          color: $md-grey-600;
+          border: none;
+
+          &:hover {
+            background: transparent;
+            color: darken($md-grey-600, 10%);
+          }
+        }
+
+        &.active {
+          a {
+            color: $brand-primary;
+            border: none;
+            border-bottom: 2px solid $brand-primary;
+          }
+        }
+      }
+
+      @media(max-width: $screen-sm-min) {
+        padding: 0;
+        li {
+          a {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .tab-content .tab-pane {
+      padding: 50px 0;
+    }
+  }
+
+  .service-item {
+    .image {
+      padding: 5px;
+      border: 1px solid $brand-primary;
+      img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+    .text {
+      text-align: left;
+
+      h4 {
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        margin-top: 24px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  .tour {
+    margin-bottom: 80px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .bottom-cta {
+    margin-bottom: 80px;
+  }
+
+}
+
+
+.full-width-service {
+  overflow: hidden;
+  background: $brown;
+  background-size: cover;
+  background-image: url("../images/bgs/sunset.jpeg");
+  background-position: center 0%;
+  height: 600px;
+  position: relative;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  padding-top: 100px;
+  color: $md-grey-300;
+  @media (max-width: 767px) {
+    height: 650px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.64) 0%,rgba(0,0,0,0.12) 100%);
+  }
+
+
+  .container {
+    position: relative;
+    z-index: 33;
+  }
+
+  .text {
+    h1, h2, h3, h4, .lead {
+      color: #fff;
+      letter-spacing: 0.3px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.4;
+    }
+
+    p, span {
+      color: #ccc;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .button-wrapper {
+    margin: 40px auto;
+  }
+
+  .btn-main-cta {
+    box-shadow: 0 2px 4px rgba($black, 0.24);
+  }
+
+  .or {
+    display: inline-block;
+    margin-left: 24px;
+    margin-right: 12px;
+  }
+
+}

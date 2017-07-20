@@ -1,0 +1,28 @@
+#contact-page
+  -# = partial "/partials/google-map.html"
+  %br
+  .container.contact-form
+    .row
+      .col-md-9
+        = partial "partials/contact-form.html"
+      %aside.col-lg-3.col-md-3.sidebar
+        .notepaper
+          .note
+            .text
+              %p
+                %strong Call us
+                %br/
+                Talk to our product specialist at
+                %strong #{data.settings.phone_number}
+              %hr/
+              %p
+                %strong Email us
+                %br/
+                Talk to our team by sending an email to
+                %strong #{data.settings.email}
+        .widget.widget-red
+          %h5
+            Browse our knowledge base
+          %p
+            We encourage you to browse our knowledge base for answers to common problems
+          %a.btn.btn-bordered.btn-white{:href => "/support.html"} Visit Knowledge Base →

@@ -1,0 +1,157 @@
+#social-footer {
+  background: $md-grey-900;
+  text-align: center;
+
+  .social-box {
+    padding: 40px 0;
+  }
+
+  h3 {
+    margin: 30px auto;
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+
+  ul.social-nav {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        font-size: 3em;
+        color: #fff;
+        padding: 0 30px;
+        color: #ccc;
+
+        &:hover {
+          background: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+#main-footer {
+  background: $md-grey-900;
+  padding-top: 60px;
+
+  .menu-container {
+    padding-bottom: 70px;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $md-grey-200;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid lighten($md-grey-900, 10%);
+    span {
+      display: inline-block;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $md-grey-200;
+    }
+  }
+
+  .blog-item {
+    .blog-item-link {
+      img {
+        display: block;
+      }
+    }
+    .image-wrapper {
+      position: relative;
+      border: 5px solid rgba($black, 0.64);
+      @include transition(all 0.2s ease-in);
+
+      img {
+        width: 100%;
+        max-height: 200px;
+      }
+
+      &:hover {
+        border: 5px solid $black;
+
+        .text {
+          background: $black;
+        }
+      }
+
+      .text {
+        @include transition(all 0.2s ease-in);
+        background: rgba($black, 0.8);
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        color: $white;
+      }
+    }
+  }
+
+
+  .footer-menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      color: $md-grey-400;
+      font-size: 1em;
+      padding: 7px 0;
+      display: block;
+      text-decoration: none;
+
+      i.material-icons {
+        font-size: 18px;
+        color: $md-grey-700;
+        position: relative;
+        top: 3px;
+        padding-right: 3px;
+      }
+
+      i.fa {
+        font-size: 20px;
+        color: $md-grey-700;
+        display: inline-block;
+        width: 24px;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .copyright-footer {
+    padding-bottom: 40px;
+
+    color: $md-grey-700;
+
+    a {
+      color: $md-grey-600;
+      padding-bottom: 1px;
+      border-bottom: 1px solid $md-grey-600;
+
+      &:hover {
+        color: $md-grey-400;
+        border-bottom-color: $md-grey-400;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+- name: Increase Revenue
+  image: /assets/images/smallicons-svg/www.svg
+  desc: Increase Course Bookings through online enrollment, multi-channel digital marketing.
+- name: Save Time
+  image: /assets/images/smallicons-svg/eye.svg
+  desc: Better communication between students and teachers, save time on course scheduling, auto-scheduled billing.
+- name: Instant business visibility
+  image: /assets/images/smallicons-svg/store.svg
+  desc: Get real-time business analytics to take right actions to improve business profitability.

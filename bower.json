@@ -1,0 +1,22 @@
+{
+  "name": "middleman-template",
+  "version": "0.1.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0",
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "~4.6.3",
+    "slick-carousel": "1.6.*",
+    "aos": "^2.1.1",
+    "countUp.js": "^1.8.1",
+    "ekko-lightbox": "^4.0.0",
+    "isotope": "^3.0.1"
+  }
+}

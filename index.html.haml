@@ -1,0 +1,220 @@
+---
+title: Training Center Management System
+---
+#index
+  %section#headline-cover
+    .container
+      .row
+        .col-md-6
+          %h1.headline-text{"data-aos" => "fade-up-right"}
+            Simplify and Automate Your Training Business
+          %p.subheading-text{"data-aos" => "fade-up-right"}
+            #{data.settings.brand} is a cloud-based business solution that is designed for tutoring center, language center, music schools, or training center.
+          .buttons-container{"data-aos" => "fade-up-right"}
+            %a.btn.btn-lg.btn-primary.btn-round.btn-main-cta{"data-target" => "#purchaseModal", "data-toggle" => "modal", href: "#"}
+              Create your account
+            %span.or or
+            %a.btn.btn-link{href: "/features/overview"}
+              Take a tour →
+        .col-md-6.hidden-sm.hidden-xs{"data-aos" => "fade-up-left"}
+          %img.img-responsive.main-img{alt: "", src: "/assets/images/myapp/macbook-calendar-view.png"}/
+  = partial "/partials/horizontal-features.html"
+  %section#features
+    .container
+      .row
+        .col-md-12.text-center
+          %h2 Do you want to focus at training and minimize administration?
+          %p.lead Try out LearnHop for free and start modernizing your training business to next level.
+    .container
+      .row.feature-single
+        .col-md-6.col-sm-4.image.hidden-xs{"data-aos" => "fade-up-right"}
+          %img.img-responsive{alt: "feature1", src: "/assets/images/display/mockup-2.png"}/
+        .col-md-6.col-sm-8.text{"data-aos" => "fade-up-left"}
+          %h3
+            Increase Course Bookings and Revenue
+          %p.lead
+            Through LearnHop's multi-channel marketing and online enrollment widgets, your course bookings can be easily found on the internet. We make online enrollment easy.
+      .divider
+      .row.feature-single
+        .col-md-6.col-sm-8.text{"data-aos" => "fade-up-right"}
+          %h3
+            Easily customizable. Adapt to your course enrollment process easily.
+          %p.lead
+            LearnHop can be customized to fit your business needs.
+        .col-md-6.col-sm-4.image.hidden-xs{"data-aos" => "fade-up-left"}
+          %img.img-responsive{alt: "feature1", src: "/assets/images/display/mockup-5.png"}/
+      .feature-square-list{"data-aos" => "fade-up"}
+        .row
+          .col-md-12
+            .additional-header
+              %h3 Need more features?
+        .row
+          .col-md-4.feature-square-single
+            .main-icon-container
+              %i.material-icons account_balance
+            %h5 Keep track of accurate records
+            %p LearnHop keeps track of your students, teachers, course catalog, financials safely and retrieve easily.
+          .col-md-4.feature-square-single.second
+            .main-icon-container
+              %i.material-icons web
+            %h5 Calendar and Scheduling
+            %p No more wasting time on scheduling for lessons. Check availabilty instantly.
+          .col-md-4.feature-square-single
+            .main-icon-container
+              %i.material-icons gesture
+            %h5 Customize and Integration
+            %p LearnHop can easily be customized to fit your corporate identity. It offers various integration tools to other applications.
+  = partial "/partials/call_for_action_v2.html"
+  %section#testimonial-stats{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-12.text-center
+          .heading
+            %h2 Used by over 10,000 people across the globe!
+            %p.lead Here's what our users say about us →
+      .row
+        .col-md-6
+          .testimonial{"data-aos" => "fade-up-right"}
+            .quote-author
+              %img.img-circle{alt: "testimonial1", src: "/assets/images/cleancut/avatar1.jpg"}/
+              .author-name John Doe
+              .author-company Awesome Inc
+            .quote-text
+              .arrow-left
+                .arrow
+                .arrow-border
+              This is a great template! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, suscipit, tempora laboriosam quam alias dolor placeat mollitia incidunt sit distinctio debitis deleniti soluta aut tenetur odio minus fugit atque quos!
+        .col-md-6
+          .testimonial{"data-aos" => "fade-up-left"}
+            .quote-author
+              %img.img-circle{alt: "testimonial1", src: "/assets/images/cleancut/avatar2.jpg"}/
+              .author-name Jane Doe
+              .author-company Foo Biz
+            .quote-text
+              .arrow-left
+                .arrow
+                .arrow-border
+              This is a great template! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, suscipit, tempora laboriosam quam alias dolor placeat mollitia incidunt sit distinctio debitis deleniti soluta aut tenetur odio minus fugit atque quos!
+      .row
+        .col-md-6.col-md-offset-3
+          .testimonial{"data-aos" => "fade-up"}
+            .quote-author
+              %img.img-circle{alt: "testimonial1", src: "/assets/images/cleancut/avatar3.jpg"}/
+              .author-name Jane Doe
+              .author-company Foo Biz
+            .quote-text
+              .arrow-left
+                .arrow
+                .arrow-border
+              This is a great template! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, suscipit, tempora laboriosam quam alias dolor placeat mollitia incidunt sit distinctio debitis deleniti soluta aut tenetur odio minus fugit atque quos!
+  %section#company-slider{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-12
+          = partial "/partials/logo-slider.html"
+          .row
+            .col-md-12.text-center
+              %a.btn.btn-bordered.btn-lg.btn-round.btn-primary{href: "/testimonials"}
+                Read more testimonials →
+  %section#pricing-table{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-12.text-center
+          %h2 Simple, honest pricing. No hidden fees.
+          %p.lead
+            No long term contracts. Change your plan at any time.
+      .row.p-tables
+        .col-md-3{"data-aos" => "fade-up-right"}
+          .panel.panel-default.text-center
+            .panel-heading
+              %p.lead.text-muted.plan-title Basic
+              %h3.panel-title.price
+                $9
+                %span.price-cents 99
+                %span.price-month mo.
+            %ul.list-group
+              %li.list-group-item 5 Projects
+              %li.list-group-item 5 GB of Storage
+              %li.list-group-item Up to 100 Users
+              %li.list-group-item 10 GB Bandwidth
+              %li.list-group-item Security Suite
+              %li.list-group-item.button-wrapper
+                %a.btn.btn-default Sign Up Now!
+        .col-md-3.popular-plan{"data-aos" => "fade-up"}
+          .panel.panel-default.text-center
+            .popular-label
+              Popular!
+            .panel-heading
+              %p.lead.text-muted.plan-title Plus
+              %h3.panel-title.price
+                $19
+                %span.price-cents 99
+                %span.price-month mo.
+            %ul.list-group
+              %li.list-group-item 10 Projects
+              %li.list-group-item 10 GB of Storage
+              %li.list-group-item Up to 250 Users
+              %li.list-group-item 25 GB Bandwidth
+              %li.list-group-item Security Suite
+              %li.list-group-item.button-wrapper
+                %a.btn.btn-primary Sign Up Now!
+        .col-md-3{"data-aos" => "fade-up-left"}
+          .panel.panel-default.text-center
+            .panel-heading
+              %p.lead.text-muted.plan-title Premium
+              %h3.panel-title.price
+                $29
+                %span.price-cents 99
+                %span.price-month mo.
+            %ul.list-group
+              %li.list-group-item Unlimited
+              %li.list-group-item 50 GB of Storage
+              %li.list-group-item Up to 1000 Users
+              %li.list-group-item 100 GB Bandwidth
+              %li.list-group-item Security Suite
+              %li.list-group-item.button-wrapper
+                %a.btn.btn-default Sign Up Now!
+        .col-md-3{"data-aos" => "fade-up-left"}
+          .panel.panel-default.text-center
+            .panel-heading
+              %p.lead.text-muted.plan-title Ultimate
+              %h3.panel-title.price
+                $49
+                %span.price-cents 99
+                %span.price-month mo.
+            %ul.list-group
+              %li.list-group-item Unlimited
+              %li.list-group-item 150 GB of Storage
+              %li.list-group-item Unlimited
+              %li.list-group-item 500 GB Bandwidth
+              %li.list-group-item Security Suite
+              %li.list-group-item.button-wrapper
+                %a.btn.btn-default Sign Up Now!
+      .row.call-us
+        .col-md-12
+          .additional-header
+            %h3
+              %i.fa.fa-phone
+              Need help choosing a plan?
+          .text
+            %p.lead
+              Not sure of which plan to choose? Give us a call at
+              %strong 456-121-1212
+              and our dedicated support staff will help you figure out the best plan for you.
+  #feature-boxed{"data-aos" => "fade-up"}
+    .container
+      .row
+        .col-md-12.text-center
+          .heading
+            %h2
+              Everything you need to automate your business
+              %br/
+              %small
+                Equip and modernize your business to accelerate to the next level.
+      = partial "/partials/boxed-features-list.html"
+      .row
+        .col-md-4.col-md-offset-4
+          .text-center
+            %a.btn.btn-lg.btn-block.btn-primary.btn-round.btn-main-cta{href: "#"}
+              %i.material-icons add_shopping_cart
+              Try it for free NOW

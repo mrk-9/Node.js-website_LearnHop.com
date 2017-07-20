@@ -1,0 +1,64 @@
+// You can take a reference from the _variables.scss
+// file inside bootstrap directory and override
+// those variables here.
+
+// Colors
+$brand-primary:         $md-blue-a200;
+$brand-success:         $md-green-400;
+$brand-info:            $md-light-blue-400;
+$brand-warning:         $md-yellow-600;
+$brand-danger:          $md-red-600;
+$body-bg:               $base;
+$text-color:            $md-grey-900;
+
+// Typography
+$headings-font-weight:    500;
+$headings-line-height:    1.25;
+$font-family-sans-serif:  "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base:        $font-family-sans-serif;
+
+// Default borders
+$border-radius-base:        2px;
+$border-radius-large:       3px;
+$border-radius-small:       1px;
+
+// Navbar
+$navbar-height:             70px;
+
+
+// Inputs
+$input-height-base:        36px;
+$input-height-large:       48px;
+
+
+// Navbar Light
+$navbar-default-color:             $md-grey-800;
+$navbar-default-bg:                $secondary;
+$navbar-default-link-active-bg:    $md-grey-50;
+$navbar-default-link-color:        $md-blue-grey-900;
+$navbar-default-link-hover-color:  darken($md-blue-grey-900, 10%);
+$navbar-default-brand-color:       $md-grey-800;
+$navbar-default-brand-hover-color: $md-grey-900;
+$navbar-default-brand-color:       darken($brand-primary, 10%);
+$navbar-default-brand-hover-color: darken($brand-primary, 20%);
+
+// Navbar dark
+// $navbar-inverse-color:             $md-light-blue-200;
+// $navbar-inverse-bg:                $md-blue-grey-800;
+// $navbar-inverse-link-active-bg:    $md-blue-grey-900;
+// $navbar-inverse-link-color:        $md-blue-grey-200;
+// $navbar-inverse-link-hover-color:  lighten($md-blue-grey-200, 10%);
+// $navbar-inverse-brand-color:       $md-white;
+// $navbar-inverse-brand-hover-color: $md-white;
+$navbar-inverse-color:             $heath;
+$navbar-inverse-bg:                $viking;
+$navbar-inverse-link-active-bg:    $heath;
+$navbar-inverse-link-color:        $white;
+$navbar-inverse-link-hover-color:  lighten($heath, 10%);
+$navbar-inverse-brand-color:       $md-white;
+$navbar-inverse-brand-hover-color: $md-white;
+
+$border-radius-base:        1px;
+
+
+$link-hover-decoration: none;

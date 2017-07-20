@@ -1,0 +1,19 @@
+.scrollToTop{
+	width:40px; 
+	height:30px;
+	padding:5px; 
+	text-align:center; 
+	background-color: orange;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	position:fixed;
+	top:800px;
+	right:20px;
+	display:none;
+	/*background: url('/assets/images/myapp/scrollTop.jpeg') no-repeat 0px 20px;*/
+}
+.scrollToTop:hover{
+	text-decoration:none;
+	color: brown;
+}

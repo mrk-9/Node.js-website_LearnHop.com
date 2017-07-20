@@ -1,0 +1,22 @@
+#purchaseModal {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      a {
+        display: inline-block;
+        padding-bottom: 1px;
+        border-bottom: 2px solid $brand-primary;
+        text-decoration: none;
+        margin: 6px 0;
+        font-weight: bold;
+
+        @media(max-width: $screen-sm-min) {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

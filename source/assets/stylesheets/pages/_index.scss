@@ -1,0 +1,274 @@
+#index {
+
+  #headline-cover {
+    overflow: hidden;
+    background-color: $brown;
+    background-size: cover;
+    // background-image: url("../images/bgs/sunset.jpeg");
+    background-image: url("../images/myapp/bkgd/teaching.jpg");
+    background-position: center 0%;
+    min-height: 550px;
+    min-height: 85vh;
+    position: relative;
+    @include box-shadow(rgba(0,0,0,0.4) 0 2px 4px);
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    @media (max-width: $screen-sm-max) {
+      min-height: 430px;
+    }
+
+    @media (max-width: $screen-sm-min) {
+      min-height: 400px;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.64) 0%,rgba(0,0,0,0.12) 100%);
+    }
+
+
+    .container {
+      position: relative;
+      z-index: 50;
+    }
+
+    .main-img {
+      display: inline-block;
+      margin-top: 60px;
+    }
+
+    .headline-text {
+      font-size: 48px;
+      line-height: 1.1;
+      letter-spacing: 0.5px;
+      color: #fff;
+
+      @media (max-width: $screen-sm-min) {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-top: 0;
+      }
+    }
+
+    .subheading-text {
+      margin-top: 25px;
+      color: #fff;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 1.6;
+      color: darken($md-grey-300, 3%);
+
+
+      @media (max-width: $screen-sm-min) {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      .headline-text, .subheading-text {
+        text-align: center;
+      }
+    }
+
+    .buttons-container {
+      margin-top: 48px;
+
+      @media (max-width: $screen-sm-max) {
+        text-align: center;
+      }
+
+      .btn-main-cta {
+        padding: 18px 48px;
+        font-weight: 500;
+        box-shadow: 0 2px 4px rgba($black, 0.48);
+        background-color: #ff9900;
+        border-color: #ff9900;
+      }
+      .btn-main-cta:hover{
+        background-color: #400d12;
+        border-color: #400d12;
+      }
+
+      .or {
+        color: $md-grey-400;
+        display: inline-block;
+        padding: 0 12px 0 18px;
+      }
+
+      @media (max-width: $screen-sm-min) {
+        .or {
+          display: block;
+          margin: 10px auto;
+        }
+      }
+
+      .btn-link {
+        color: $md-grey-300;
+        border-bottom: 1px solid $md-grey-500;
+        padding: 0;
+        padding-bottom: 1px;
+        text-decoration: none;
+
+        &:hover {
+          color: red;
+          border-bottom-color: red;
+        }
+      }
+    }
+
+    .img {
+      position: absolute;
+      top: 15px;
+      left: 625px;
+      width: 570px;
+      height: 333px;
+      background-image: url("../../images/static-hero.png");
+      background-repeat: no-repeat;
+
+      @media(max-width: 991px) {
+        display: none;
+      }
+    }
+
+    .vid-player {
+      border-radius: 6px;
+      background: #bdc3c7;
+      position: relative;
+      overflow: hidden;
+      height: 360px;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+    }
+  }
+
+
+  #features {
+    padding-top: 40px;
+  }
+
+  #feature-boxed {
+    color: $md-grey-400;
+    background: $md-grey-900;
+    background: linear-gradient(to bottom, $md-grey-900 , darken($md-grey-900, 5%));
+    background-size: cover;
+    background-image: url("../images/bgs/misty-mountains.jpg");
+    background-position: center 0%;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.6) 100%);
+      z-index: 1;
+    }
+    > div {
+      position: relative;
+      z-index: 2;
+    }
+    h2, h5 {
+      color: $white;
+      small {
+        color: $md-grey-400;
+      }
+    }
+  }
+
+  #pricing-table {
+    background: $secondary;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 40px 0;
+  }
+
+
+  #testimonial-stats {
+    padding-bottom: 40px;
+    .heading {
+      margin-bottom: 40px;
+    }
+  }
+
+  #company-slider {
+    padding-bottom: 80px;
+    overflow: hidden;
+  }
+}
+
+
+#index.index-alt {
+  #headline-cover {
+    padding-top: 30px;
+    text-align: center;
+    background-image: url("../images/bgs/mist.jpg");
+    background-position: bottom;
+
+    .headline-text, .subheading-text {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+#index.index-mobile {
+  #headline-cover {
+    padding: 0;
+    background-image: url("../images/bgs/starry.jpg");
+    background-position: left bottom;
+
+    .headline-text {
+      @media(min-width: $screen-sm-max) {
+        margin-top: 100px;
+      }
+    }
+
+    &:after {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.64) 0%,rgba(0,0,0,0.12) 100%);
+    }
+
+  }
+
+  .feature-single {
+    .image img {
+      max-width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+#highlight-cta {
+  background: #FEFFFC;
+  padding: 30px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 50px auto;
+  margin-top: 80px;
+
+  @media(max-width: 767px) {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+}

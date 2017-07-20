@@ -1,0 +1,49 @@
+.notepaper {
+  .note {
+    background: #fcfbe9;
+    color: #686a6b;
+
+    border: 1px solid rgba(200, 201, 204, 0.9);
+    position: relative;
+  }
+
+
+  .text {
+    margin: 30px 0;
+    margin-bottom: 10px;
+    padding: 2px 15px;
+    font-size: 12px;
+
+    h3 {
+      margin: 0;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+  .text::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #c8c9cc;
+    width: 55px;
+    height: 20px;
+    position: absolute;
+    margin: 0 auto -20px;
+    top: -11px;
+    left: 35%;
+    transform: rotate(-1deg);
+  }
+  .text span {
+    font-weight: bold;
+  }
+}

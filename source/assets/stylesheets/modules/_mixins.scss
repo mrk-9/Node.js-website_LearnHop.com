@@ -1,0 +1,25 @@
+@mixin set-nav-styles($border-color: $md-grey-200, $active-color: $md-white) {
+  .navbar-nav {
+    .open > a, .open > a:hover, .open > a:focus {
+      border-color: $border-color;
+    }
+
+    > li > a {
+      border-left: 1px solid $border-color;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      @media(max-width: $screen-sm) {
+        border: none;
+      }
+    }
+
+    .dropdown-menu {
+      background-color: $active-color;
+      border: none;
+      @media(min-width: $screen-sm) {
+        box-shadow: 0 2px 4px rgba($md-black, 0.24);
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+#logo-slider {
+  margin-bottom: 80px;
+
+  .item {
+    height: 220px;
+    padding: 20px;
+    opacity: 0.6;
+    img {
+      width: 100%;
+      margin: 50% auto;
+      transform: translateY(-50%);
+      max-width: 100%;
+    }
+
+    @media(min-width: $screen-sm-max) {
+      img {
+        max-width: 300px;
+      }
+    }
+
+    @media(max-width: $screen-sm-min) {
+      height: 450px;
+      img {
+        margin-top: 30%;
+        max-width: 450px;
+      }
+    }
+  }
+}
